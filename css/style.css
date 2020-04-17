@@ -24,8 +24,18 @@ body {
 
 /******************** LAYOUT *****************************/
 .container {
-  width: 80%;
+  width: 63%;
   min-width: 900px;
-  height: 95%;
+  height: 96%;
   background: #fff;;
+}
+
+.side {
+  width: 30%;
+  height: 100%;
+  background: #eaeaea;
+}
+
+.content-chat {
+  width: 70%;
 }
