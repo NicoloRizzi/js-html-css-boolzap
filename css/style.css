@@ -57,3 +57,10 @@ body {
   height: 100%;
   align-self: center;
 }
+
+
+.content-chat .block-write-message {
+  height: 51px;
+  width: 100%;
+  border: 1px solid red;
+}
