@@ -91,13 +91,30 @@ body {
 
 /********/
 
+/*** BLOCCO NOTIFY*****/
 
 .side .block-notify {
   display: flex;
   height: 50px;
   background-color: #8bd3f2;
+  align-items: center;
+}
+.side .block-notify .notify-bell {
+  display: flex;
+  background-color: #f2f2f2;
+  height: 40px;
+  width: 40px;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.side .block-notify .notify-bell i {
+  align-self: center;
+  color: #8bd3f2;
 }
 
+
+/**********************/
 .side .search-chat {
   height: 31px;
   width: 100%;
