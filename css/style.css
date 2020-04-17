@@ -24,18 +24,36 @@ body {
 
 /******************** LAYOUT *****************************/
 .container {
-  width: 63%;
+  display: flex;
+  width: 70%;
   min-width: 900px;
   height: 96%;
   background: #fff;;
 }
 
 .side {
-  width: 38%;
+  width: 34%;
   height: 100%;
   background: #eaeaea;
 }
 
 .content-chat {
-  width: 62%;
+  display: flex;
+  flex-direction: column;
+  width: 66%;
+}
+
+/* SEZIONE CONTENT CHAT*/
+
+.content-chat .info-contatto{
+  width: 100%;
+  border: 1px solid red;
+  height: 45px;
+}
+
+.content-chat .main-chat {
+  width: 546px;
+  border: 1px solid black;
+  height: 100%;
+  align-self: center;
 }
