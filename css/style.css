@@ -1,8 +1,31 @@
-/* GENERAL RULES */
+/* ***************GENERAL RULES ********************/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* END GENERAL RULES */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    #009688 0px,
+    #009688 13vh,
+    #d2dbdc 13vh,
+    #d2dbdc 100%
+  );
+  font-family: 'Lato', sans-serif;
+}
+
+/***************** END GENERAL RULES *************************/
+
+/******************** LAYOUT *****************************/
+.container {
+  width: 80%;
+  min-width: 900px;
+  height: 95%;
+  background: #fff;;
+}
