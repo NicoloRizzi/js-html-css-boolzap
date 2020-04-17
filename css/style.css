@@ -20,6 +20,15 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+ul li {
+  height: 51px;
+  list-style: none;
+}
+
+ul li:hover {
+  border: 1px solid green;
+}
+
 /***************** END GENERAL RULES *************************/
 
 /******************** LAYOUT *****************************/
@@ -98,4 +107,10 @@ body {
   height: 51px;
   width: 100%;
   border: 1px solid black;
+}
+
+.image-profile {
+	width: 40px;
+	height: 40px;
+	border-radius: 30px;
 }
