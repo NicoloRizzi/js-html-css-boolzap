@@ -20,14 +20,6 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-ul li {
-  height: 51px;
-  list-style: none;
-}
-
-ul li:hover {
-  border: 1px solid green;
-}
 
 /***************** END GENERAL RULES *************************/
 
@@ -77,12 +69,27 @@ ul li:hover {
 
 
 /************* SEZIONE SIDE ************/
+/** SEZIONE USER INFO **/
 .side .user-info {
   display: flex;
   width: 100%;
   height: 45px;
-  background-color: blue;
+  background-color:#eaeaea;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.side .user-info ul li{
+  display: inline-block;
+  padding-right: 13px;
+
+}
+
+.side .user-info ul li i{
+  color: #b1b1b1;
+}
+
+/********/
 
 
 .side .block-notify {
