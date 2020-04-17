@@ -113,6 +113,10 @@ body {
   color: #8bd3f2;
 }
 
+.block-notify .text-notify  {
+  padding-left: 10px;
+}
+
 
 /**********************/
 .side .search-chat {
