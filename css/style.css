@@ -13,8 +13,8 @@ body {
   background-image: linear-gradient(
     to bottom,
     #009688 0px,
-    #009688 13vh,
-    #d2dbdc 13vh,
+    #009688 15vh,
+    #d2dbdc 15vh,
     #d2dbdc 100%
   );
   font-family: 'Lato', sans-serif;
@@ -79,6 +79,10 @@ body {
   align-items: center;
 }
 
+.side .user-info .image-profile {
+  margin-left: 7px;
+}
+
 .side .user-info ul li{
   display: inline-block;
   padding-right: 13px;
@@ -107,6 +111,7 @@ body {
   border-radius: 30px;
   justify-content: center;
   align-items: center;
+  margin-left: 13px;
 }
 .side .block-notify .notify-bell i {
   align-self: center;
@@ -119,12 +124,31 @@ body {
 
 
 /**********************/
+
+/** BLOCCO SEARCH CHAT***/
 .side .search-chat {
   height: 31px;
   width: 100%;
-  background: gold;
+  padding: 5px;
 
 }
+
+
+.side .input-search-chat {
+  background-color: #fff;
+  height: 100%;
+  color: #b1b1b1;
+}
+
+.side .input-search-chat span {
+  font-size: 10px;
+  color: #000;
+}
+
+.side .input-search-chat i {
+  padding: 0 21px;
+}
+
 
 .side .global-chat {
   border: 4px solid violet;
