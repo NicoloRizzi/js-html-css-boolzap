@@ -26,22 +26,21 @@ body {
 /******************** LAYOUT *****************************/
 .container {
   display: flex;
-  width: 70%;
+  width: 79%;
   min-width: 900px;
   height: 96%;
   background: #fff;;
 }
 
 .side {
-  width: 34%;
-  height: 100%;
+  width: 35%;
   background: #eaeaea;
 }
 
 .content-chat {
   display: flex;
   flex-direction: column;
-  width: 66%;
+  width: 65%;
 }
 
 /* SEZIONE CONTENT CHAT*/
@@ -144,6 +143,7 @@ body {
   background-color: #fff;
   height: 100%;
   color: #b1b1b1;
+  border-radius: 0 2px 2px 0;
 }
 
 .side .input-search-chat span {
@@ -158,7 +158,7 @@ body {
 /*** SEZIONE GLOBAL CHAT ****/
 
 .side .global-chat {
-  background-color:transparent;
+  background-color: #fff;
 }
 
 .side .global-chat .list-friends{
@@ -170,12 +170,17 @@ body {
   border: 1px solid black;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .side .global-chat .list-friends img {
   height: 40px;
   width: 40px;
   border-radius: 30px;
+}
+
+.side .global-chat .list-friends span:nth-child(2) {
+  ali
 }
 
 
