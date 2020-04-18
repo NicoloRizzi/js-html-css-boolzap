@@ -41,28 +41,31 @@ body {
   display: flex;
   flex-direction: column;
   width: 65%;
+  background-image: url("../img/mine.jpg");
 }
 
 /* SEZIONE CONTENT CHAT*/
 
 .content-chat .info-contatto{
   width: 100%;
-  background-color: chartreuse;
-  height: 45px;
+  background-color: #eaeaea;
+  height: 50px;
+  display: flex;
+  align-items: center;
 }
 
 .content-chat .main-chat {
   width: 546px;
-  background-color: crimson;
   height: 100%;
   align-self: center;
+  
 }
 
 
 .content-chat .block-write-message {
   height: 45px;
   width: 100%;
-  background-color: brown;
+  background-color:#f3eeeb;
 }
 
 
@@ -75,7 +78,7 @@ body {
 .side .user-info {
   display: flex;
   width: 100%;
-  height: 45px;
+  height: 50px;
   background-color:#eaeaea;
   justify-content: space-between;
   align-items: center;
@@ -170,7 +173,6 @@ body {
   border: 1px solid black;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .side .global-chat .list-friends img {
@@ -178,10 +180,3 @@ body {
   width: 40px;
   border-radius: 30px;
 }
-
-.side .global-chat .list-friends span:nth-child(2) {
-  ali
-}
-
-
-
