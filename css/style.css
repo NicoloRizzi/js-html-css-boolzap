@@ -49,26 +49,37 @@ body {
 .content-chat .info-contatto{
   width: 100%;
   background-color: #eaeaea;
-  height: 50px;
+  height: 44px;
   display: flex;
   align-items: center;
+  padding: 7px;
+  border-left: 1px solid #d6d6d6;
+  justify-content: space-between;
 }
 
 .content-chat .main-chat {
   width: 546px;
   height: 100%;
   align-self: center;
+  background-color: aquamarine;
   
 }
 
+.content-chat .icons i {
+  padding-right: 13px;
+  color: #b1b1b1;
+}
 
-.content-chat .block-write-message {
+
+.content-chat .footer-message {
   height: 45px;
   width: 100%;
   background-color:#f3eeeb;
 }
 
-
+.content-chat .info-contatto .pluto  {
+  padding: ;
+}
 
 /************* SEZIONE SIDE ************/
 
@@ -78,7 +89,7 @@ body {
 .side .user-info {
   display: flex;
   width: 100%;
-  height: 50px;
+  height: 44px;
   background-color:#eaeaea;
   justify-content: space-between;
   align-items: center;
@@ -92,7 +103,7 @@ body {
 	border-radius: 30px;
 }
 
-.side .user-info ul li{
+ .user-info ul li{
   display: inline-block;
   padding-right: 13px;
 
