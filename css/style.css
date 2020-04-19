@@ -78,10 +78,11 @@ body {
 .content-chat .main-chat {
   width: 546px;
   height: 100%;
+  padding-top: 37px;
   display: flex;
   flex-direction: column;
   align-self: center;
-  border: 1px solid black; /************ DEBUG ********/
+  /*border: 1px solid black; /************ DEBUG ********/
 }
 
 .box {
