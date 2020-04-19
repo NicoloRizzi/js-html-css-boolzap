@@ -57,6 +57,7 @@ body {
 
 /* SEZIONE CONTENT CHAT*/
 
+/* SEZIONE INFO CONTATTO */
 .content-chat .info-contatto{
   width: 100%;
   background-color: #eaeaea;
@@ -68,36 +69,19 @@ body {
   justify-content: space-between;
 }
 
-.content-chat .main-chat {
-  width: 546px;
-  height: 100%;
-  align-self: center;
-  border: 1px solid black;
-  
-}
-
 .content-chat .icons i {
   padding-right: 13px;
   color: #b1b1b1;
 }
 
-
-.content-chat .footer-message {
-  height: 45px;
-  width: 100%;
-  background-color: #f3eeeb;
+/* SEZIONE MAIN CHAT */
+.content-chat .main-chat {
+  width: 546px;
+  height: 100%;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-
-.content-chat .footer-message .fas {
-  opacity: .4;
-}
-
-.info {
-  display: flex;
+  flex-direction: column;
+  align-self: center;
+  border: 1px solid black; /************ DEBUG ********/
 }
 
 .box {
@@ -115,6 +99,26 @@ body {
   font-size: 12px;
   opacity: 0.7;
 }
+
+
+/* SEZIONE FOOTER MESSAGE */
+
+.content-chat .footer-message {
+  height: 54px;
+  width: 100%;
+  background-color: #f3eeeb;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+.content-chat .footer-message .fas {
+  opacity: .4;
+}
+
+
+
 
 /************* SEZIONE SIDE ************/
 
@@ -223,9 +227,10 @@ body {
 
 .side .global-chat .list-friends li {
   height: 51px;
-  border: 1px solid black;
+  border: 1px solid black; /*************** DEBUG ************/
   display: flex;
-  align-items: center;
+  flex-direction: row;
+
 }
 
 

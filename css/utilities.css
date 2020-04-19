@@ -14,3 +14,24 @@
   width: 40px;
   border-radius: 30px;
 }
+
+.message {
+  height: 38px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: row;
+  padding: 9px 3px 9px 6px;
+}
+
+.user-msg {
+  background-color: #d5faba;
+}
+
+.friend-msg {
+  background-color: #fff;
+}
+
+.font-size {
+  font-size: 6px;
+}
