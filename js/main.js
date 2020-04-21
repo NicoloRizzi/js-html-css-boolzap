@@ -2,6 +2,8 @@ $(document).ready(function(){
   // referenze
   var messageInput = $('.footer-message .box .new-message-input');  
   var sendIcon = $('.footer-message .footer-icons.send i');
+  var searchInput = $('.search-chat .search-input');
+
   
   
 
@@ -28,6 +30,28 @@ $(document).ready(function(){
       sendMessage(messageInput);
       setTimeout(genMessageGuest, 1000);
     }
+  });
+
+  /**
+   * RICERCA CONTATTI 
+   */
+
+  searchInput.keyup(function () {
+    var search = $(this).val().toLowerCase().trim();
+
+    /* ESEGUO CICLO SU OGNI CONTATTO PRESENTE*/
+    $('.global-chat .list-friends .contact').each(function (){
+      // nome del contatto attuale nel loop
+      var nomeContatto = $(this).find('.contact-name').text().toLowerCase();
+      
+
+      // CONTROLLO SE IL VALORE NELL'INPUT E' PRESENTE NEI CONTACT-NAME
+      if (nomeContatto.includes(search)) {
+        $(this).show();
+      } else {
+        $(this).hide();
+      }
+    });
   });
 
 }); // END DOC READY
@@ -63,7 +87,6 @@ function sendMessage(input) {
 
     // reset input messaggio
     input.val('');
-
 
 
     /**
