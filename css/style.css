@@ -207,11 +207,6 @@ body {
   border-radius: 0 2px 2px 0;
 }
 
-.side .input-search-chat span {
-  font-size: 10px;
-  color: #000;
-}
-
 .side .input-search-chat i {
   padding: 0 21px;
 }
@@ -228,7 +223,6 @@ body {
 
 .side .global-chat .list-friends li {
   height: 51px;
-  border: 1px solid black; /*************** DEBUG ************/
   display: flex;
   flex-direction: row;
 
@@ -239,4 +233,55 @@ body {
   height: 40px;
   width: 40px;
   border-radius: 30px;
+}
+
+
+.underline {
+  text-decoration: underline;
+  opacity: 0.5;
+  display: block;
+}
+
+
+.block {
+  display: block;
+}
+
+.circle-img {
+  height: 40px;
+  width: 40px;
+  border-radius: 30px;
+}
+
+
+
+
+
+/********************** BLOCCO UTILITIES **********************/
+.message {
+  height: 38px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: column;
+  padding: 9px 3px 9px 6px;
+  font-size: 14px;
+  width: 108px;
+}
+
+.user-msg {
+  background-color: #d5faba;
+  align-self: end;
+}
+
+.friend-msg {
+  background-color: #fff;
+}
+
+.font-size {
+  font-size: 8px;
+}
+
+.text-align {
+  text-align: right;
 }

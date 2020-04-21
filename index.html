@@ -10,13 +10,18 @@
   <!------------- LINK UTILITIES STYLE--------------------------->
   <link rel="stylesheet" href="css/utilities.css">
   <!------------- LINK GOOGLE FONTS---------------- -->
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <!------------- LINK CDN FONTAWSOME----------------->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+  <!-- LINK JQUERY-->
+  <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <!--LINK MAIN JS-->
+    <script src="js/main.js"></script>
 </head>
 <body>
-  
-  <div class="container"><!--BLOCCO PRINCIPALE INIZIO-->
+  <!--BLOCCO PRINCIPALE INIZIO-->
+  <div class="container">
 
     <!--BLOCCO SIDEBAR DI SX INIZIO-->
     <div class="side">
@@ -53,7 +58,7 @@
       <div class="search-chat">
         <div class="input-search-chat">
           <i class="fas fa-search"></i>
-          <span>Cerca o inizia una nuova chat</span>
+          <input type="text" placeholder="Cerca o inizia una nuova chat">
         </div>
       </div>
       <!-- FINE BLOCCO SEARCH-CHAT-->
@@ -62,28 +67,51 @@
       <div class="global-chat">
         <ul class="list-friends">
           <li>
-            <div>
               <img src="img\avatar_1.jpg" alt="img-1">
-            </div>
-            <div>
               <span>Michele</span>
-            </div>
-            <div>
               <span>Non poteva essere altrimenti</span>
-            </div>
-            <div>
               <span>17:53</span>
-            </div>
           </li>
-          <!--
-          <li><img src="img\avatar_2.jpg" alt="img-2"><span>Fabio</span><span>Non poteva essere altrimenti</span><span>17:53</span></li>
-          <li><img src="img\avatar_3.jpg" alt="img-3"><span>Samuele</span><span>Non poteva essere altrimenti</span><span>17:53</span></li>
-          <li><img src="img\avatar_1.jpg" alt="img-4"><span>Alessandro B.</span><span>Non poteva essere altrimenti</span><span>17:53</span></li>
-          <li><img src="img\avatar_5.jpg" alt="img-5"><span>Alessandro L.</span><span>Non poteva essere altrimenti</span><span>17:53</span></li>
-          <li><img src="img\avatar_6.jpg" alt="img-6"><span>Claudia</span><span>Non poteva essere altrimenti</span><span>17:53</span></li>
-          <li><img src="img\avatar_7.jpg" alt="img-7"><span>Davide</span><span>Non poteva essere altrimenti</span><span>17:53</span></li>
-          <li><img src="img\avatar_8.jpg" alt="img-8"><span>Federico</span><span>Non poteva essere altrimenti</span><span>17:53</span></li>
-          -->
+          <li>
+            <img src="img\avatar_2.jpg" alt="img-2">
+            <span>Fabio</span>
+            <span>Non poteva essere altrimenti</span>
+            <span>17:53</span>
+          </li>
+          <li>
+            <img src="img\avatar_3.jpg" alt="img-3"><span>Samuele</span>
+            <span>Non poteva essere altrimenti</span>
+            <span>17:53</span></li>
+          <li>
+            <img src="img\avatar_1.jpg" alt="img-4">
+            <span>Alessandro B.</span>
+            <span>Non poteva essere altrimenti</span>
+            <span>17:53</span>
+          </li>
+          <li>
+            <img src="img\avatar_5.jpg" alt="img-5">
+            <span>Alessandro L.</span>
+            <span>Non poteva essere altrimenti</span>
+            <span>17:53</span>
+          </li>
+          <li>
+            <img src="img\avatar_6.jpg" alt="img-6">
+            <span>Claudia</span>
+            <span>Non poteva essere altrimenti</span>
+            <span>17:53</span>
+          </li>
+          <li>
+            <img src="img\avatar_7.jpg" alt="img-7">
+            <span>Davide</span>
+            <span>Non poteva essere altrimenti</span>
+            <span>17:53</span>
+          </li>
+          <li>
+            <img src="img\avatar_8.jpg" alt="img-8">
+            <span>Federico</span>
+            <span>Non poteva essere altrimenti</span>
+            <span>17:53</span>
+          </li>
         </ul>
       </div>
       <!--BLOCCO CHAT GLOBALE FINE-->
@@ -133,10 +161,10 @@
         </div>
         
         <div class="box">
-          <span>Scrivi un messaggio</span>
+          <input class="new-message-input" type="text" placeholder="Scrivi un messaggio">
         </div>
-        <div>
-          <i class="fas fa-paper-plane"></i>
+        <div class="footer-icons send">
+          <i class="fas fa-microphone"></i>
         </div>
       </div><!-- BLOCCO FINE FOOTER MESSAGE-->
     </div><!--BLOCCO CONTENITORE CHAT FINE-->
@@ -145,9 +173,13 @@
 
 
 
-  <!-----------------TEMPLATE
-  <div class="template">
-    <li class="element"><i class="fas fa-trash-alt"></i></li>
-  </div>-------------------->
+  <!-----------------TEMPLATE-------------------->
+<div class="template">
+  <div class="message">
+    <span class="message-text">Ciao, come stai?</span>
+    <span class="message-time">17:31</span>
+    <span class="answerGuest">OK</span>
+  </div>
+</div>
 </body>
 </html>
