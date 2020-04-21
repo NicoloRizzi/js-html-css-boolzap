@@ -29,6 +29,7 @@ body {
     #d2dbdc 100%
   );
   font-family: 'Lato', sans-serif;
+  
 }
 
 
@@ -40,7 +41,7 @@ body {
   width: 79%;
   min-width: 900px;
   height: 96%;
-  background: #fff;;
+  background: #fff;
 }
 
 .side {
@@ -64,9 +65,10 @@ body {
   height: 44px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 7px;
   border-left: 1px solid #d6d6d6;
-  justify-content: space-between;
+  
 }
 
 .content-chat .icons i {
@@ -82,24 +84,8 @@ body {
   display: flex;
   flex-direction: column;
   align-self: center;
-  /*border: 1px solid black; /************ DEBUG ********/
 }
 
-.box {
-  display: flex;
-  height: 32px;
-  width: 69%;
-  border-radius: 5px;
-  border: 1px solid #ffff;
-  align-items: center;
-  background-color: #ffff;
-}
-
-.box span {
-  padding: 14px 9px;
-  font-size: 12px;
-  opacity: 0.7;
-}
 
 
 /* SEZIONE FOOTER MESSAGE */
@@ -118,7 +104,21 @@ body {
   opacity: .4;
 }
 
+.box {
+  display: flex;
+  height: 32px;
+  width: 69%;
+  border-radius: 5px;
+  border: 1px solid #ffff;
+  align-items: center;
+  background-color: #ffff;
+}
 
+.box span {
+  padding: 14px 9px;
+  font-size: 12px;
+  opacity: 0.7;
+}
 
 
 
@@ -173,6 +173,7 @@ body {
   align-items: center;
   margin-left: 13px;
 }
+
 .side .block-notify .notify-bell i {
   align-self: center;
   color: #8bd3f2;

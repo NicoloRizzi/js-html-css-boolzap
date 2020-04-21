@@ -1,7 +1,7 @@
 $(document).ready(function(){
   // referenze
-  var messageInput = $('.new-message-input');  
-  var sendIcon = $('.footer-icons.send i');
+  var messageInput = $('.footer-message .box .new-message-input');  
+  var sendIcon = $('.footer-message .footer-icons.send i');
   
   
 
@@ -36,32 +36,31 @@ $(document).ready(function(){
 function sendMessage(input) {
   // MEMORIZZO IN UNA VARIABILE IL VALORE PASSATO TRAMITE PARAMETRO
   var testoMessaggio = input.val().trim();
-
+  console.log(testoMessaggio);
+  
   // CONTROLLO SE IL CAMPO HA CONTENUTO
   if (testoMessaggio.length > 0) {
     // clone template
     var nuovoMessaggio = $('.template .message').clone();
-
+    console.log(nuovoMessaggio);
+    
     // aggiunta testo messaggio
     nuovoMessaggio.children('.message-text').text(testoMessaggio);
 
     // Creazione e inserimento ora attuale
-    var data = new Date();
-    var ora = addZero(data.getHours());
-    var minuti = addZero(data.getMinutes());
-    var orario = ora + ':' + minuti;
+   var orario = oraAttuale();
     nuovoMessaggio.children('.message-time').text(orario);
 
     // Aggiungi classe sent (inviata dall'utente)
-    nuovoMessaggio.addClass('sent');
+    nuovoMessaggio.addClass('user-msg');
 
     // Aggiunta nuovo messaggio al contenitore messaggi attivo
-    $('.message.user-msg .active').append(nuovoMessaggio);
+    $('.main-chat').append(nuovoMessaggio);
 
     // reset input messaggio
     input.val('');
-  } 
-}  
+  } // END IF 
+} // END FUNCTION 
 
 
 // funzione aggiungi zero
@@ -71,4 +70,12 @@ function addZero(numero) {
   }
 
   return numero;
+}
+
+function oraAttuale() {
+  var data = new Date();
+  var ora = addZero(data.getHours());
+  var minuti = addZero(data.getMinutes());
+  var orario = ora + ':' + minuti;
+  return orario
 }
