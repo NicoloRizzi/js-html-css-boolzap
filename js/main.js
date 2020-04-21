@@ -48,7 +48,7 @@ function sendMessage(input) {
     nuovoMessaggio.children('.message-text').text(testoMessaggio);
 
     // Creazione e inserimento ora attuale
-   var orario = oraAttuale();
+    var orario = oraAttuale();
     nuovoMessaggio.children('.message-time').text(orario);
 
     // Aggiungi classe sent (inviata dall'utente)
