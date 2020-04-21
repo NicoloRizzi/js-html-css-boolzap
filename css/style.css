@@ -121,6 +121,7 @@ body {
 
 
 
+
 /************* SEZIONE SIDE ************/
 
 
@@ -258,6 +259,10 @@ body {
 
 
 /********************** BLOCCO UTILITIES **********************/
+.template {
+  display: none;
+}
+
 .message {
   height: 38px;
   border-radius: 8px;
