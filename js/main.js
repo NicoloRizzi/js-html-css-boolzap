@@ -19,19 +19,23 @@ $(document).ready(function(){
    */
   sendIcon.click(function () {
     sendMessage(messageInput);
+    setTimeout(genMessageGuest, 1000);
   });
 
   // STATO DI INVIO CLICCANDO ENTER
   messageInput.keypress(function (e) {
     if (e.which == 13) {
       sendMessage(messageInput);
+      setTimeout(genMessageGuest, 1000);
     }
   });
 
-});
+}); // END DOC READY
 
 
-// FUNCTION
+/************************************************************
+ * SECTION FUNCTIONS
+ ***********************************************************/
 // invia nuovo messaggio
 function sendMessage(input) {
   // MEMORIZZO IN UNA VARIABILE IL VALORE PASSATO TRAMITE PARAMETRO
@@ -59,6 +63,30 @@ function sendMessage(input) {
 
     // reset input messaggio
     input.val('');
+
+
+
+    /**
+     * RISPOSTA AUTOMATICA
+     */
+
+    setTimeout(function () {
+      // CLONE TEMPLATE
+      var nuovaRisposta = $('.template .message').clone();
+
+      // AGGIUNTA CLASSE NUOVA
+      nuovaRisposta.addClass('friend-msg');
+
+      // AGGIUNTA DEL TESTO NUOVO
+      nuovaRisposta.children('.message-text').text('Ok');
+
+      // AGGIUNTA DEL NUOVO ORARIO
+      var orario = oraAttuale();
+      nuovaRisposta.children('.message-time').text(orario);
+
+      // AGGIUNTA DEL NUOVO MESSAGGIO ALL'INTERNO DEL CONTENITORE MESSAGGI
+      $('.main-chat').append(nuovaRisposta);
+    }, 1000);
   } // END IF 
 } // END FUNCTION 
 
