@@ -27,9 +27,9 @@ body {
 /******************** LAYOUT *****************************/
 .container {
   display: flex;
-  width: 79%;
+  width: 77%;
   min-width: 900px;
-  height: 96%;
+  height: 95%;
   background: #fff;
 }
 
@@ -120,15 +120,14 @@ body {
 .side .user-info {
   display: flex;
   width: 100%;
-  height: 44px;
+  height: 45px;
   background-color:#eaeaea;
   justify-content: space-between;
   align-items: center;
+  padding-left: 7px;
 }
 
-
 .side .user-info .image-profile {
-  margin-left: 7px;
   width: 40px;
 	height: 40px;
 	border-radius: 30px;
@@ -192,16 +191,22 @@ body {
 }
 
 
-.side .input-search-chat {
+.side .block-search-chat {
   background-color: #fff;
   height: 100%;
   color: #b1b1b1;
   border-radius: 0 2px 2px 0;
 }
 
-.side .input-search-chat i {
+.side .block-search-chat i {
   padding: 0 21px;
 }
+
+.search-chat .block-search-chat input {
+  width: 82%;
+  border: none;
+}
+
 
 /*** SEZIONE GLOBAL CHAT ****/
 
