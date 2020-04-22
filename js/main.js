@@ -2,7 +2,8 @@ $(document).ready(function(){
   // referenze
   var messageInput = $('.footer-message .box .new-message-input');  
   var sendIcon = $('.footer-message .footer-icons.send i');
-  var searchInput = $('.search-chat .search-input');
+  var searchInput = $('.search-chat #search-contact');
+  
 
   
   

@@ -21,6 +21,10 @@ body {
   
 }
 
+ul {
+  list-style: none;
+}
+
 
 /***************** END GENERAL RULES *************************/
 
@@ -50,21 +54,28 @@ body {
 /* SEZIONE INFO CONTATTO */
 .content-chat .info-contatto{
   width: 100%;
-  background-color: #eaeaea;
-  height: 44px;
+  background-color: red;/*#eaeaea;*/
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 7px;
   border-left: 1px solid #d6d6d6;
-  
+  height: 53px;
 }
 
-.content-chat .icons i {
+.content-box {
+  display: flex;
+  background-color: royalblue;
+}
+
+
+.content-chat ul li {
   padding-right: 13px;
   color: #b1b1b1;
 }
 
+.content-chat ul  {
+  display: flex;
+}
 /* SEZIONE MAIN CHAT */
 .content-chat .main-chat {
   width: 546px;
@@ -94,6 +105,8 @@ body {
   opacity: .4;
 }
 
+
+
 .box {
   display: flex;
   height: 32px;
@@ -113,6 +126,11 @@ body {
   border: none;
   width: 100%;
 }
+
+.footer-message .box .new-message-input:focus {
+  border: 1px solid #dcdcdc;
+}
+
 
 
 
@@ -245,11 +263,6 @@ body {
   display: block;
 }
 
-
-.block {
-  display: block;
-}
-
 .circle-img {
   height: 40px;
   width: 40px;
@@ -260,6 +273,10 @@ body {
 /********************** BLOCCO UTILITIES **********************/
 .template {
   display: none;
+}
+
+.fas {
+  cursor: pointer;
 }
 
 .message {
