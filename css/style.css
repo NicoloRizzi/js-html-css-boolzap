@@ -54,7 +54,7 @@ ul {
 /* SEZIONE INFO CONTATTO */
 .content-chat .info-contatto{
   width: 100%;
-  background-color: red;/*#eaeaea;*/
+  background-color:#eaeaea;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -64,7 +64,6 @@ ul {
 
 .content-box {
   display: flex;
-  background-color: royalblue;
 }
 
 
@@ -125,10 +124,6 @@ ul {
 .footer-message .box .new-message-input {
   border: none;
   width: 100%;
-}
-
-.footer-message .box .new-message-input:focus {
-  border: 1px solid #dcdcdc;
 }
 
 
