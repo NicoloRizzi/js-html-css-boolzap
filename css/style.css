@@ -64,6 +64,7 @@ ul {
 
 .content-box {
   display: flex;
+  align-items: center;	
 }
 
 
@@ -86,6 +87,9 @@ ul {
   overflow-y: auto;
 }
 
+.info-contatto .content-box img.circle-img {
+  margin-left:5px;
+}
 
 
 /* SEZIONE FOOTER MESSAGE */
@@ -262,6 +266,14 @@ ul {
   height: 40px;
   width: 40px;
   border-radius: 30px;
+}
+
+.global-chat .list-friends .contact .contact-name {
+  margin: 0 5px;
+}
+
+.contact > span:nth-child(4) {
+  margin-left: 5px;
 }
 
 
